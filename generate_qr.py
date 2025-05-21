@@ -13,7 +13,7 @@ def add_entry(title, text, image_url):
     return entry_id
 
 def generate_qr(entry_id):
-    url = f"https://your-deployment-url.onrender.com/view/{entry_id}"
+    url = f"https://qr-code-generator-1-8sq9.onrender.com/view/{entry_id}"
     img = qrcode.make(url)
     img.save(f"{entry_id}.png")
     print(f"QR Code saved as {entry_id}.png with URL: {url}")
@@ -22,6 +22,6 @@ def generate_qr(entry_id):
 if __name__ == '__main__':
     title = "Welcome!"
     text = "Scan this to see the greeting message and image."
-    image_url = "https://via.placeholder.com/300.png"
+    image_url = "https://placehold.co/300.png"
     entry_id = add_entry(title, text, image_url)
     generate_qr(entry_id)
