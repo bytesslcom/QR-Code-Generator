@@ -2,4 +2,8 @@ Flask
 gunicorn
 qrcode
 waitress
+<<<<<<< HEAD
 Pillow
+=======
+Pillow
+>>>>>>> 371a8219661bbd519d6ca865392169bb9395faa8
