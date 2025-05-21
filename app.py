@@ -6,7 +6,7 @@ DATABASE = 'database.db'
 
 @app.route('/')
 def home():
-    return '<h2>QR Code App is Running</h2><p>Use a valid /view/&lt;entry_id&gt; URL to see data.</p>'
+    return '<h2>QR Code App is Running</h2><p>Please use a valid /view/&lt;entry_id&gt; URL to see data.</p>'
     
 def get_db():
     db = getattr(g, '_database', None)
