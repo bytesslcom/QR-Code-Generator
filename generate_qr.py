@@ -13,7 +13,7 @@ def add_entry(title, text, image_url):
     return entry_id
 
 def generate_qr(entry_id):
-    url = f"https://your-deployment-url.onrender.com/view/{entry_id}"
+    url = f"https://qr-code-generator-1-whlf.onrender.com/view/{entry_id}"
     img = qrcode.make(url)
     img.save(f"{entry_id}.png")
     print(f"QR Code saved as {entry_id}.png with URL: {url}")
