@@ -1,0 +1,10 @@
+# Ignore virtual environment folder
+qrcode/
+
+# Ignore all QR code images
+*.png
+
+# Ignore system files
+__pycache__/
+*.pyc
+.DS_Store
